@@ -1,68 +1,68 @@
 # Changelog
 
-Todos los cambios notables de este proyecto serán documentados en este archivo.
+All notable changes to this project will be documented in this file.
 
-El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
-y este proyecto adhiere al [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [1.0.0] - 2025-07-08
 
-### Agregado
-- Diseño minimalista completamente plano con fondo `#fbeee6`
-- Sistema de estados de aplicaciones (disponible/próximamente)
-- Navegación suave entre secciones
-- Tooltips informativos para cada aplicación
-- Footer minimalista con enlaces de navegación
-- Layout de círculos optimizado para mostrar las 7 aplicaciones
-- Sistema de badges de estado para aplicaciones
-- Descripciones detalladas de cada chakra y su aplicación correspondiente
+### Added
+- Completely flat minimalist design with `#fbeee6` background
+- Application status system (available/coming soon)
+- Smooth navigation between sections
+- Informative tooltips for each application
+- Minimalist footer with navigation links
+- Optimized circular layout to display all 7 applications
+- Application status badge system
+- Detailed descriptions of each chakra and its corresponding application
 
-### Cambiado
-- **Rediseño completo minimalista**:
-  - Eliminados todos los gradientes
-  - Fondo plano `#fbeee6` con texto negro
-  - Eliminadas sombras y efectos visuales complejos
-  - Bordes simples en negro
-  - Animaciones simplificadas
-- **Sistema de aplicaciones actualizado**:
-  - 6 aplicaciones marcadas como "Available"
-  - 1 aplicación (OMO Express) marcada como "Próximamente" como ejemplo
-  - Eliminado sistema de progreso porcentual
-  - Estados simplificados (available/disabled)
-- **Tipografía actualizada**:
-  - Cambio de Inter a Poppins para mejor legibilidad
-  - Ajustes en tamaños y pesos de fuente
-- **Estructura de contenido mejorada**:
-  - Secciones individuales para cada chakra
-  - Descripciones más detalladas y específicas
-  - Mejor organización del contenido
+### Changed
+- **Complete minimalist redesign**:
+  - Removed all gradients
+  - Flat `#fbeee6` background with black text
+  - Removed shadows and complex visual effects
+  - Simple black borders
+  - Simplified animations
+- **Updated application system**:
+  - 6 applications marked as "Available"
+  - 1 application (OMO Express) marked as "Coming Soon" as example
+  - Removed percentage progress system
+  - Simplified states (available/disabled)
+- **Updated typography**:
+  - Changed from Inter to Poppins for better readability
+  - Adjusted font sizes and weights
+- **Improved content structure**:
+  - Individual sections for each chakra
+  - More detailed and specific descriptions
+  - Better content organization
 
-### Removido
-- Sistema de progress bars y porcentajes
-- Gradientes y efectos visuales complejos
-- Sombras y efectos de profundidad
-- Sistema de badges "LIVE" animados
-- Referencias a App Store (placeholder)
+### Removed
+- Progress bars and percentage system
+- Gradients and complex visual effects
+- Shadows and depth effects
+- Animated "LIVE" badge system
+- App Store references (placeholder)
 
-### Arreglado
-- Layout de círculos corregido para mostrar correctamente las 7 aplicaciones
-- Posicionamiento de elementos en dispositivos móviles
-- Navegación entre secciones optimizada
-- Tooltips funcionando correctamente en todos los dispositivos
+### Fixed
+- Circular layout corrected to properly display all 7 applications
+- Element positioning on mobile devices
+- Optimized navigation between sections
+- Tooltips working correctly on all devices
 
-### Documentación
-- README.md completo con instrucciones de uso
-- .gitignore configurado para desarrollo web
-- Estructura de proyecto organizada
-- Ejemplos de personalización y extensión
+### Documentation
+- Complete README.md with usage instructions
+- .gitignore configured for web development
+- Organized project structure
+- Customization and extension examples
 
 ---
 
-## Tipos de cambios
+## Types of changes
 
-- `Agregado` para nuevas características.
-- `Cambiado` para cambios en funcionalidad existente.
-- `Deprecated` para características que se removerán pronto.
-- `Removido` para características removidas.
-- `Arreglado` para cualquier bug fix.
-- `Seguridad` en caso de vulnerabilidades. 
+- `Added` for new features.
+- `Changed` for changes in existing functionality.
+- `Deprecated` for features that will be removed soon.
+- `Removed` for removed features.
+- `Fixed` for any bug fixes.
+- `Security` in case of vulnerabilities. 

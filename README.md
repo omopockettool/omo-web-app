@@ -1,94 +1,94 @@
-# OMO - Suite de Apps Móviles
+# OMO - Mobile Apps Suite
 
-**On My Own** - Herramientas de bolsillo para el crecimiento personal (Pocket tools)
+**On My Own** - Pocket tools for personal growth
 
-## 🌟 Descripción
+## 🌟 Description
 
-OMO (On My Own) es una suite de 7 aplicaciones móviles diseñadas como herramientas de bolsillo que ayudan al individuo en su día a día a encontrarse consigo mismo, a ordenarse, a expandirse y a vivir mejor.
+OMO (On My Own) is a suite of 7 mobile applications designed as pocket tools that help individuals in their daily life to find themselves, get organized, expand, and live better.
 
-Cada aplicación está asociada a un chakra específico con su color correspondiente y funcionalidad única, siguiendo la filosofía de un alma despierta que integra la tecnología en su camino hacia la libertad.
+Each application is associated with a specific chakra with its corresponding color and unique functionality, following the philosophy of an awakened soul that integrates technology in their path towards freedom.
 
-### 🌈 Mapeo de Chakras y Aplicaciones
+### 🌈 Chakra and Applications Mapping
 
-| Chakra | Color | Aplicación | Estado |
-|--------|-------|------------|--------|
-| **Raíz (Muladhara)** | Rojo `#F44336` | **OMO Money** | ✅ Disponible |
-| **Sacro (Svadhisthana)** | Naranja `#FF9800` | **OMO Crea** | ✅ Disponible |
-| **Plexo Solar (Manipura)** | Amarillo `#FFEB3B` | **OMO Control** | ✅ Disponible |
-| **Corazón (Anahata)** | Verde `#4CAF50` | **OMO Genius** | ✅ Disponible |
-| **Garganta (Vishuddha)** | Azul `#03A9F4` | **OMO Express** | 🔄 Próximamente |
-| **Tercer Ojo (Ajna)** | Índigo `#3F51B5` | **OMO Totem** | ✅ Disponible |
-| **Corona (Sahasrara)** | Violeta `#991fff` | **OMO Dreams** | ✅ Disponible |
+| Chakra | Color | Application | Status |
+|--------|-------|-------------|--------|
+| **Root (Muladhara)** | Red `#F44336` | **OMO Money** | ✅ Available |
+| **Sacral (Svadhisthana)** | Orange `#FF9800` | **OMO Crea** | ✅ Available |
+| **Solar Plexus (Manipura)** | Yellow `#FFEB3B` | **OMO Control** | ✅ Available |
+| **Heart (Anahata)** | Green `#4CAF50` | **OMO Genius** | ✅ Available |
+| **Throat (Vishuddha)** | Blue `#03A9F4` | **OMO Express** | 🔄 Coming Soon |
+| **Third Eye (Ajna)** | Indigo `#3F51B5` | **OMO Totem** | ✅ Available |
+| **Crown (Sahasrara)** | Purple `#991fff` | **OMO Dreams** | ✅ Available |
 
-## 🎯 Aplicaciones de la Suite
+## 🎯 Suite Applications
 
-### 🔴 OMO Money - Chakra Raíz
-**Gestión financiera personal y estabilidad económica**
-- Presupuesto personal y seguimiento de gastos
-- Hábitos financieros saludables
-- Base financiera estable
+### 🔴 OMO Money - Root Chakra
+**Personal financial management and economic stability**
+- Personal budget and expense tracking
+- Healthy financial habits
+- Stable financial foundation
 
-### 🟠 OMO Crea - Chakra Sacro  
-**Potenciar la creatividad y expresión artística**
-- Exploración del potencial creativo
-- Herramientas para escritura, diseño, música
-- Expresión de la creatividad innata
+### 🟠 OMO Crea - Sacral Chakra  
+**Enhance creativity and artistic expression**
+- Explore creative potential
+- Tools for writing, design, music
+- Express innate creativity
 
-### 🟡 OMO Control - Chakra Plexo Solar
-**Manejo del control personal y disciplina**
-- Desarrollo de autocontrol
-- Establecimiento de metas claras
-- Gestión de impulsos y consumo
+### 🟡 OMO Control - Solar Plexus Chakra
+**Personal control and discipline management**
+- Develop self-control
+- Set clear goals
+- Manage impulses and consumption
 
-### 🟢 OMO Genius - Chakra Corazón
-**Desarrollo intelectual y conexión emocional**
-- Búsqueda de comunidad
-- Encuentro de pareja
-- Desarrollo de vínculos profundos
+### 🟢 OMO Genius - Heart Chakra
+**Intellectual development and emotional connection**
+- Community search
+- Partner finding
+- Develop deeper bonds
 
-### 🔵 OMO Express - Chakra Garganta
-**Expresión personal y comunicación**
-- Encontrar la voz auténtica
-- Mejorar habilidades de comunicación
-- Expresar ideas con claridad
+### 🔵 OMO Express - Throat Chakra
+**Personal expression and communication**
+- Find authentic voice
+- Improve communication skills
+- Express ideas clearly
 
-### 🟣 OMO Totem - Chakra Tercer Ojo
-**Intuición y sabiduría interior**
-- Descubrir el arquetipo personal
-- Conectar con la esencia profunda
-- Encontrar la identidad espiritual
+### 🟣 OMO Totem - Third Eye Chakra
+**Intuition and inner wisdom**
+- Discover personal archetype
+- Connect with deep essence
+- Find spiritual identity
 
-### 🟣 OMO Dreams - Chakra Corona
-**Seguimiento de sueños y conexión espiritual**
-- Análisis de patrones en sueños
-- Mejora de sueños lúcidos
-- Exploración del subconsciente
+### 🟣 OMO Dreams - Crown Chakra
+**Dream tracking and spiritual connection**
+- Analyze dream patterns
+- Improve lucid dreaming
+- Explore subconscious
 
-## 🚀 Características del Sitio Web
+## 🚀 Website Features
 
-- **Diseño Minimalista**: Fondo plano `#fbeee6` con texto negro
-- **Layout Circular**: Visualización intuitiva con 7 aplicaciones alrededor del centro
-- **Interactivo**: Hover y click para mostrar información detallada
-- **Responsive**: Adaptado para dispositivos móviles y desktop
-- **Sin Gradientes**: Diseño completamente plano y minimalista
-- **Navegación Suave**: Scroll automático a secciones específicas
+- **Minimalist Design**: Flat `#fbeee6` background with black text
+- **Circular Layout**: Intuitive visualization with 7 applications around the center
+- **Interactive**: Hover and click to show detailed information
+- **Responsive**: Adapted for mobile and desktop devices
+- **No Gradients**: Completely flat and minimalist design
+- **Smooth Navigation**: Automatic scroll to specific sections
 
-## 💻 Tecnologías
+## 💻 Technologies
 
-- **HTML5**: Estructura semántica
-- **CSS3**: Diseño minimalista con Flexbox y Grid
-- **JavaScript Vanilla**: Interactividad sin dependencias externas
-- **Google Fonts**: Tipografía Poppins para un diseño moderno
+- **HTML5**: Semantic structure
+- **CSS3**: Minimalist design with Flexbox and Grid
+- **Vanilla JavaScript**: Interactivity without external dependencies
+- **Google Fonts**: Poppins typography for modern design
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 omo-web-app/
-├── index.html              # Página principal
-├── styles.css              # Estilos minimalistas
-├── script.js               # Funcionalidad interactiva
-├── package.json            # Configuración del proyecto
-├── assets/                 # Iconos de las aplicaciones
+├── index.html              # Main page
+├── styles.css              # Minimalist styles
+├── script.js               # Interactive functionality
+├── package.json            # Project configuration
+├── assets/                 # Application icons
 │   ├── OMO_Control.png
 │   ├── OMO_Crea.png
 │   ├── OMO_Dreams.png
@@ -96,43 +96,41 @@ omo-web-app/
 │   ├── OMO_Genius.png
 │   ├── OMO_Money.png
 │   └── OMO_Totem.png
-├── README.md               # Este archivo
-├── CHANGELOG.md            # Historial de cambios
-├── LICENSE                 # Licencia MIT
-└── .gitignore              # Archivos a ignorar en Git
+├── README.md               # This file
+├── CHANGELOG.md            # Change history
+├── LICENSE                 # MIT License
+└── .gitignore              # Files to ignore in Git
 ```
-
-
 
 ## 📱 Responsive Design
 
-La página está optimizada para:
-- **Desktop**: Experiencia completa con hover effects
-- **Tablet**: Diseño adaptado para pantallas medianas  
-- **Mobile**: Layout compacto y táctil
+The page is optimized for:
+- **Desktop**: Complete experience with hover effects
+- **Tablet**: Design adapted for medium screens  
+- **Mobile**: Compact and touch-friendly layout
 
-## 🤝 Contribución
+## 🤝 Contribution
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/NuevaFuncionalidad`)
-3. Commit tus cambios (`git commit -m 'Agregar nueva funcionalidad'`)
-4. Push a la rama (`git push origin feature/NuevaFuncionalidad`)
-5. Abre un Pull Request
+1. Fork the project
+2. Create a branch for your feature (`git checkout -b feature/NewFeature`)
+3. Commit your changes (`git commit -m 'Add new feature'`)
+4. Push to the branch (`git push origin feature/NewFeature`)
+5. Open a Pull Request
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
+This project is under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contacto
+## 📞 Contact
 
-**Con ♥️ Dennis** - Impulsador de OMO
+**With ♥️ Dennis** - OMO Driver
 
 - Email: omopockettool@gmail.com
 
 ---
 
-⭐ Si este proyecto te resulta útil, ¡no olvides darle una estrella!
+⭐ If this project is useful to you, don't forget to give it a star!
 
 ---
 
-*"On My Own - Herramientas para encontrarte contigo mismo"* 
+*"On My Own - Tools to find yourself"* 
