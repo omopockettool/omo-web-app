@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMO - Suite de Apps Móviles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="#" class="navbar-brand" onclick="scrollToTop()">OMO</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Circular Progress Layout -->
+        <section class="apps-circle">
+            <div class="circle-container">
+                <!-- Central Circle -->
+                <div class="central-circle">
+                    <span class="central-text">OMO</span>
+                </div>
+
+                <!-- App Circles -->
+                <div class="app-circle" data-app="money" data-angle="0" data-status="live">
+                    <div class="app-progress">
+                        <div class="progress-fill"></div>
+                        <img src="assets/OMO_Money.png" alt="OMO Money" class="app-icon">
+                        <div class="app-label">Money</div>
+                    </div>
+                </div>
+
+                <div class="app-circle" data-app="crea" data-angle="51.4" data-status="live">
+                    <div class="app-progress">
+                        <div class="progress-fill"></div>
+                        <img src="assets/OMO_Crea.png" alt="OMO Crea" class="app-icon">
+                        <div class="app-label">Crea</div>
+                    </div>
+                </div>
+
+                <div class="app-circle" data-app="control" data-angle="102.8" data-status="live">
+                    <div class="app-progress">
+                        <div class="progress-fill"></div>
+                        <img src="assets/OMO_Control.png" alt="OMO Control" class="app-icon">
+                        <div class="app-label">Control</div>
+                    </div>
+                </div>
+
+                <div class="app-circle" data-app="genius" data-angle="154.2" data-status="live">
+                    <div class="app-progress">
+                        <div class="progress-fill"></div>
+                        <img src="assets/OMO_Genius.png" alt="OMO Genius" class="app-icon">
+                        <div class="app-label">Genius</div>
+                    </div>
+                </div>
+
+                <div class="app-circle" data-app="express" data-angle="205.6" data-status="live">
+                    <div class="app-progress">
+                        <div class="progress-fill"></div>
+                        <img src="assets/OMO_Express.png" alt="OMO Express" class="app-icon">
+                        <div class="app-label">Express</div>
+                    </div>
+                </div>
+
+                <div class="app-circle" data-app="totem" data-angle="257" data-status="live">
+                    <div class="app-progress">
+                        <div class="progress-fill"></div>
+                        <img src="assets/OMO_Totem.png" alt="OMO Totem" class="app-icon">
+                        <div class="app-label">Totem</div>
+                    </div>
+                </div>
+
+                <div class="app-circle" data-app="dreams" data-angle="308.4" data-status="live">
+                    <div class="app-progress">
+                        <div class="progress-fill"></div>
+                        <img src="assets/OMO_Dreams.png" alt="OMO Dreams" class="app-icon">
+                        <div class="app-label">Dreams</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OMO Section -->
+        <section id="omo" class="chakra-section">
+            <div class="section-content">
+                <!-- <h2>OMO</h2> -->
+                <h3>On My Own.</h3>
+                <br>
+                <h2><i>"Filosofía de un alma despierta que integra la tecnología en su camino hacia la libertad."</i></h2>
+                <br>
+                <p>Promueve la autonomía y el bienestar personal a través de herramientas digitales diseñadas para el crecimiento individual y colectivo.</p>
+            </div>
+        </section>
+
+        <!-- Money Chakra Section -->
+        <section id="money" class="chakra-section money-chakra">
+            <div class="section-content">
+                <div class="chakra-header">
+                    <img src="assets/OMO_Money.png" alt="OMO Money" class="chakra-icon">
+                    <div class="chakra-title-container">
+                        <h2>OMO Money - Chakra Raíz</h2>
+                        <a href="#" class="status-chip available" onclick="goToAppStore('money')">Available</a>
+                    </div>
+                </div>
+                <p>El chakra raíz, asociado con las glándulas suprarrenales, representa la estabilidad, seguridad y supervivencia. OMO Money te ayuda a gestionar tus finanzas personales, crear un presupuesto sólido y desarrollar hábitos financieros saludables. Aprende a manejar tu dinero de manera consciente y construye una base financiera estable para tu vida.</p>
+            </div>
+        </section>
+
+        <!-- Crea Chakra Section -->
+        <section id="crea" class="chakra-section crea-chakra">
+            <div class="section-content">
+                <div class="chakra-header">
+                    <img src="assets/OMO_Crea.png" alt="OMO Crea" class="chakra-icon">
+                    <div class="chakra-title-container">
+                        <h2>OMO Crea - Chakra Sacro</h2>
+                        <a href="#" class="status-chip available" onclick="goToAppStore('crea')">Available</a>
+                    </div>
+                </div>
+                <p>El chakra sacro, asociado con las gónadas (ovarios/testículos), está relacionado con la sexualidad y la creatividad. OMO Crea es tu espacio para explorar y desarrollar tu potencial creativo. Desde la escritura hasta el diseño, pasando por la música y las artes visuales, encuentra tu voz única y expresa tu creatividad innata.</p>
+            </div>
+        </section>
+
+        <!-- Control Chakra Section -->
+        <section id="control" class="chakra-section control-chakra">
+            <div class="section-content">
+                <div class="chakra-header">
+                    <img src="assets/OMO_Control.png" alt="OMO Control" class="chakra-icon">
+                    <div class="chakra-title-container">
+                        <h2>OMO Control - Chakra del Plexo Solar</h2>
+                        <a href="#" class="status-chip available" onclick="goToAppStore('control')">Available</a>
+                    </div>
+                </div>
+                <p>El chakra del plexo solar, asociado con el páncreas, gobierna el poder personal, la voluntad y la disciplina. OMO Control te ayuda a desarrollar autocontrol, establecer metas claras y mantener la disciplina necesaria para alcanzarlas. Aprende a manejar tus impulsos y consumo descontrolado.</p>
+            </div>
+        </section>
+
+        <!-- Genius Chakra Section -->
+        <section id="genius" class="chakra-section genius-chakra">
+            <div class="section-content">
+                <div class="chakra-header">
+                    <img src="assets/OMO_Genius.png" alt="OMO Genius" class="chakra-icon">
+                    <div class="chakra-title-container">
+                        <h2>OMO Genius - Chakra del Corazón</h2>
+                        <a href="#" class="status-chip available" onclick="goToAppStore('genius')">Available</a>
+                    </div>
+                </div>
+                <p>El chakra del corazón, asociado con el timo, es el centro del amor, la compasión y la conexión emocional. OMO Genius Bridge es el puente entre tu corazón y tu cerebro, donde podrás buscar comunidad, encontrar pareja y desarrollar vínculos más profundos.</p>
+            </div>
+        </section>
+
+        <!-- Express Chakra Section -->
+        <section id="express" class="chakra-section express-chakra disabled">
+            <div class="section-content">
+                <div class="chakra-header">
+                    <img src="assets/OMO_Express.png" alt="OMO Express" class="chakra-icon">
+                    <div class="chakra-title-container">
+                        <h2>OMO Express - Chakra de la Garganta</h2>
+                        <span class="status-chip disabled">Próximamente</span>
+                    </div>
+                </div>
+                <p>El chakra de la garganta, asociado con la tiroides, está relacionado con la comunicación, la expresión y la verdad. OMO Express te ayuda a encontrar tu voz auténtica, mejorar tus habilidades de comunicación y expresar tus ideas con claridad y confianza. Aprende a comunicarte de manera efectiva y honesta.</p>
+            </div>
+        </section>
+
+        <!-- Totem Chakra Section -->
+        <section id="totem" class="chakra-section totem-chakra">
+            <div class="section-content">
+                <div class="chakra-header">
+                    <img src="assets/OMO_Totem.png" alt="OMO Totem" class="chakra-icon">
+                    <div class="chakra-title-container">
+                        <h2>OMO Totem - Chakra del Tercer Ojo</h2>
+                        <a href="#" class="status-chip available" onclick="goToAppStore('totem')">Available</a>
+                    </div>
+                </div>
+                <p>El chakra del tercer ojo, asociado con la glándula pineal, representa la intuición, la sabiduría y la percepción extrasensorial. OMO Totem es tu guía para descubrir tu arquetipo, tu tótem personal, ayudándote a recordar quién eres realmente. Conecta con tu esencia más profunda y encuentra tu identidad espiritual única.</p>
+            </div>
+        </section>
+
+        <!-- Dreams Chakra Section -->
+        <section id="dreams" class="chakra-section dreams-chakra">
+            <div class="section-content">
+                <div class="chakra-header">
+                    <img src="assets/OMO_Dreams.png" alt="OMO Dreams" class="chakra-icon">
+                    <div class="chakra-title-container">
+                        <h2>OMO Dreams - Chakra Corona</h2>
+                        <a href="#" class="status-chip available" onclick="goToAppStore('dreams')">Available</a>
+                    </div>
+                </div>
+                <p>El chakra de la corona, asociado con la glándula pituitaria, conecta con la conciencia universal, la espiritualidad y la trascendencia. OMO Dreams es una herramienta que te permite encontrar patrones en tus sueños, ayudándote a mejorar en tus sueños lúcidos y explorar tu subconsciente. Descubre los mensajes ocultos de tu mente y desarrolla una conexión más profunda con tu mundo onírico.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#subscription">Suscripción</a>
+                <a href="#about">Sobre OMO</a>
+                <a href="#contact">Contacto</a>
+                <a href="https://instagram.com/omo" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://x.com/omo" target="_blank" rel="noopener">X (Twitter)</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

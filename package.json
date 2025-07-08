@@ -1,0 +1,63 @@
+{
+  "name": "omo-landing",
+  "version": "1.0.0",
+  "description": "Landing page para la suite de apps móviles OMO (On My Own) - Herramientas de bolsillo para el crecimiento personal",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8080 -o",
+    "dev": "npx live-server --port=8080 --open=/",
+    "serve": "python -m http.server 8080",
+    "build": "echo 'No build process needed - static HTML/CSS/JS'",
+    "deploy": "echo 'Ready for deployment'",
+    "preview": "npx http-server -p 3000 -o"
+  },
+  "keywords": [
+    "omo",
+    "landing-page",
+    "apps",
+    "mobile-apps",
+    "chakras",
+    "personal-development",
+    "progress-tracking",
+    "html",
+    "css",
+    "javascript",
+    "responsive",
+    "circular-design"
+  ],
+  "author": {
+    "name": "Dennis",
+    "email": "tu-email@ejemplo.com",
+    "url": "https://github.com/tu-usuario"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/omo-landing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-usuario/omo-landing/issues"
+  },
+  "homepage": "https://tu-usuario.github.io/omo-landing",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "files": [
+    "index.html",
+    "styles.css",
+    "script.js",
+    "assets/",
+    "README.md",
+    "CHANGELOG.md"
+  ]
+} 
