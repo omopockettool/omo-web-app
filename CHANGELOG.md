@@ -26,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Maintained full text readability for user information
   - Disabled click events on status chips for unavailable apps
 - **Donation system styling**:
-  - Custom gradient design matching Buy Me a Coffee branding
+  - Changed from gradient design to solid gray color for better browser compatibility
   - Hover effects with smooth animations
   - Responsive design for all screen sizes
   - Integrated seamlessly with existing design language
@@ -37,6 +37,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Clear visual distinction between available and disabled states
   - Better accessibility for donation links
   - Consistent styling across all donation elements
+- **Browser compatibility**:
+  - Fixed donation button rendering issues in production environments
+  - Improved cross-browser compatibility for donation elements
+  - Ensured consistent appearance across different hosting platforms
 
 ### Documentation
 - Updated donation system implementation
