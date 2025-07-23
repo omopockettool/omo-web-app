@@ -12,13 +12,13 @@ Each application is associated with a specific chakra with its corresponding col
 
 | Chakra | Color | Application | Status |
 |--------|-------|-------------|--------|
-| **Root (Muladhara)** | Red `#F44336` | **OMO Money** | ✅ Available |
-| **Sacral (Svadhisthana)** | Orange `#FF9800` | **OMO Crea** | ✅ Available |
-| **Solar Plexus (Manipura)** | Yellow `#FFEB3B` | **OMO Control** | ✅ Available |
-| **Heart (Anahata)** | Green `#4CAF50` | **OMO Genius** | ✅ Available |
+| **Root (Muladhara)** | Red `#F44336` | **OMO Money** | 🔄 Coming Soon |
+| **Sacral (Svadhisthana)** | Orange `#FF9800` | **OMO Crea** | 🔄 Coming Soon|
+| **Solar Plexus (Manipura)** | Yellow `#FFEB3B` | **OMO Control** | 🔄 Coming Soon|
+| **Heart (Anahata)** | Green `#4CAF50` | **OMO Genius** | 🔄 Coming Soon |
 | **Throat (Vishuddha)** | Blue `#03A9F4` | **OMO Express** | 🔄 Coming Soon |
-| **Third Eye (Ajna)** | Indigo `#3F51B5` | **OMO Totem** | ✅ Available |
-| **Crown (Sahasrara)** | Purple `#991fff` | **OMO Dreams** | ✅ Available |
+| **Third Eye (Ajna)** | Indigo `#3F51B5` | **OMO Totem** | 🔄 Coming Soon |
+| **Crown (Sahasrara)** | Purple `#991fff` | **OMO Dreams** | 🔄 Coming Soon |
 
 ## 🎯 Suite Applications
 
@@ -123,7 +123,7 @@ This project is under the MIT License - see the [LICENSE](LICENSE) file for deta
 
 ## 📞 Contact
 
-**With ♥️ Dennis** - OMO Driver
+**With 🤍 Dennis** - OMO Creator
 
 - Email: omopockettool@gmail.com
 
@@ -133,4 +133,4 @@ This project is under the MIT License - see the [LICENSE](LICENSE) file for deta
 
 ---
 
-*"On My Own - Tools to find yourself"* 
+*"On My Own - Pocket Tools to find yourself"* 
