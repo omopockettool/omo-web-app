@@ -343,9 +343,7 @@ body {
     scroll-margin-top: 100px;
 }
 
-.chakra-section:nth-child(even) {
-    background-color: #f8f9fa;
-}
+
 
 .section-content {
     max-width: 800px;
