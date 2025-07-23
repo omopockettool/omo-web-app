@@ -5,6 +5,44 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2025-07-23
+
+### Added
+- **Donation system integration**:
+  - Buy Me a Coffee integration with custom styling
+  - Prominent donation section in main OMO section
+  - Donation link in footer with special styling
+  - Custom donation button with gradient design
+- **Enhanced disabled state styling**:
+  - Improved visual feedback for disabled chakras
+  - Grayscale filter for disabled app icons
+  - Maintained text readability for disabled sections
+  - Non-clickable status chips for disabled apps
+
+### Changed
+- **Disabled chakra behavior**:
+  - Removed blur effects from disabled sections
+  - Changed to grayscale icon filter for better UX
+  - Maintained full text readability for user information
+  - Disabled click events on status chips for unavailable apps
+- **Donation system styling**:
+  - Custom gradient design matching Buy Me a Coffee branding
+  - Hover effects with smooth animations
+  - Responsive design for all screen sizes
+  - Integrated seamlessly with existing design language
+
+### Fixed
+- **User experience improvements**:
+  - Users can now read full descriptions of disabled apps
+  - Clear visual distinction between available and disabled states
+  - Better accessibility for donation links
+  - Consistent styling across all donation elements
+
+### Documentation
+- Updated donation system implementation
+- Enhanced user experience documentation
+- Improved accessibility guidelines
+
 ## [1.0.0] - 2025-07-08
 
 ### Added
