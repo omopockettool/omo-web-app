@@ -3,13 +3,13 @@
 // Configuration for each app status
 const appStatus = {
     // money: 'disabled',
-    money: 'live',
-    crea: 'live',
-    control: 'live',
-    genius: 'live',
-    express: 'live',
-    totem: 'live',
-    dreams: 'live'
+    money: 'disabled',
+    crea: 'disabled',
+    control: 'disabled',
+    genius: 'disabled',
+    express: 'disabled',
+    totem: 'disabled',
+    dreams: 'disabled'
 };
 
 // Initialize app status on page load
