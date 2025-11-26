@@ -29,16 +29,39 @@
 }
 
 .navbar-brand {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: #000;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     cursor: pointer;
     transition: opacity 0.3s ease;
 }
 
+.navbar-logo {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .navbar-logo {
+    transform: scale(1.05);
+}
+
 .navbar-brand:hover {
     opacity: 0.7;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .navbar-logo {
+        height: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-logo {
+        height: 20px;
+    }
 }
 
 body {
@@ -84,23 +107,38 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 10;
-    border: 2px solid #000;
     cursor: pointer;
+    overflow: hidden;
 }
 
-.central-text {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #000;
-    letter-spacing: 0.05em;
+.central-logo {
+    width: 140px !important;
+    height: 140px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+}
+
+.central-logo:hover {
+    transform: scale(1.1);
+}
+
+/* Forzar estilo redondo - backup */
+img.central-logo {
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    object-fit: cover !important;
+    overflow: hidden !important;
 }
 
 
@@ -277,12 +315,32 @@ body {
     }
     
     .central-circle {
-        width: 100px;
-        height: 100px;
+        width: 140px;
+        height: 140px;
     }
     
-    .central-text {
-        font-size: 1.8rem;
+    .central-logo {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+    }
+    
+    /* Mobile phones */
+    @media (max-width: 480px) {
+        .central-logo {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+        }
+    }
+    
+    /* Very small screens */
+    @media (max-width: 360px) {
+        .central-logo {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+        }
     }
     
     .app-circle {
