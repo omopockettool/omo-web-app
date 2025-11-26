@@ -1,3 +1,81 @@
+/* Feature chips style */
+.feature-chip {
+    display: inline-block;
+    background: #F44336;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5em 1.2em;
+    font-size: 0.80rem;
+    font-weight: 500;
+    margin-right: 0.5em;
+    margin-bottom: 0.3em;
+    box-shadow: 0 1px 4px rgba(244,67,54,0.07);
+    transition: background 0.2s, color 0.2s;
+}
+.feature-chip:hover {
+    background: #F44336;
+    color: #fff;
+}
+/* Description sub-card rows for better balance */
+.desc-subcard-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+@media (max-width: 900px) {
+    .desc-subcard-row {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}
+/* Card header title row for button placement */
+.card-header-title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+.card-title-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/* Features sub-cards row */
+.card-features-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+@media (max-width: 900px) {
+    .card-features-row {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}
+/* Description sub-cards row */
+.card-description-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+.desc-subcard {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #333;
+    flex: 1;
+    text-align: center;
+    border: 1px solid #ececec;
+}
+@media (max-width: 900px) {
+    .card-description-row {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}
 /* Reset and base styles */
 * {
     margin: 0;
@@ -55,6 +133,108 @@
 @media (max-width: 768px) {
     .navbar-logo {
         height: 24px;
+    }
+}
+
+/* Modern Chakra Card Styles */
+.chakra-card {
+    background: #f5f6fa;
+    border-radius: 18px;
+    margin: 2rem auto;
+    max-width: 700px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+/* Apple Store Icon Link */
+.apple-store-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.apple-store-icon-link:hover .apple-store-icon {
+    filter: brightness(0.8);
+}
+.apple-store-icon {
+    width: 156px;
+    height: 156px;
+    vertical-align: middle;
+}
+
+.chakra-label {
+    display: block;
+    font-size: 1rem;
+    color: #F44336;
+    font-weight: 600;
+    margin-top: 0.2rem;
+}
+
+.card-description {
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.card-features {
+    list-style: disc inside;
+    margin: 0;
+    padding-left: 1rem;
+    color: #222;
+}
+
+.card-related-apps {
+    margin-top: 1rem;
+}
+
+.related-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.related-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 64px;
+}
+
+.related-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #fbeee6;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    margin-bottom: 0.2rem;
+}
+
+@media (max-width: 600px) {
+    .chakra-card {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem;
+    }
+    .card-header {
+        gap: 0.5rem;
+    }
+    .card-icon {
+        width: 48px;
+        height: 48px;
     }
 }
 
