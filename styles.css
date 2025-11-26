@@ -1,121 +1,94 @@
-/* --- MAIN CARD STYLES --- */
-body {
-    font-family: 'Inter', 'Poppins', Arial, sans-serif;
-    background: #ffffff;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    font-size: 1.25rem;
+/* ===================================
+   CSS VARIABLES
+   =================================== */
+:root {
+    /* Chakra Colors */
+    --color-root: #F44336;      /* Red - Money */
+    --color-sacral: #FF9800;    /* Orange - Crea */
+    --color-solar: #FFEB3B;     /* Yellow - Control */
+    --color-heart: #4CAF50;     /* Green - Genius */
+    --color-throat: #03A9F4;    /* Blue - Express */
+    --color-third-eye: #3F51B5; /* Indigo - Totem */
+    --color-crown: #991fff;     /* Purple - Dreams */
+    --color-disabled: #e7e6e6;  /* Gray */
+
+    /* Neutral Colors */
+    --color-text-primary: #000;
+    --color-text-secondary: #333;
+    --color-text-tertiary: #666;
+    --color-text-muted: #888;
+    --color-bg-white: #ffffff;
+    --color-bg-light: #f8f9fa;
+    --color-bg-card: #f5f6fa;
+    --color-border: #e9ecef;
+    --color-border-subtle: #ececec;
+
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 2.5rem;
+
+    /* Border Radius */
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 18px;
+    --radius-xl: 20px;
+    --radius-round: 50%;
+
+    /* Font Sizes */
+    --font-xs: 0.7rem;
+    --font-sm: 0.9rem;
+    --font-base: 1rem;
+    --font-md: 1.1rem;
+    --font-lg: 1.25rem;
+    --font-xl: 2rem;
+    --font-2xl: 2.5rem;
+
+    /* Layout */
+    --container-max: 1200px;
+    --card-max: 770px;
+    --content-max: 800px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.3s ease;
+    --transition-slow: 0.8s ease;
 }
 
-.related-apps-label {
-    font-size: 1rem;
-    font-weight: 500;
-    color: #333;
-    margin-bottom: 0.5rem;
-    display: block;
-}
-
-.chakra-card {
-    background: #f5f6fa;
-    border-radius: 18px;
-    margin: 0.5rem auto 2rem auto;
-    max-width: 700px;
-    height: 100%;
-    padding: 2.5rem 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.card-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.card-icon {
-    width: 80px;
-    height: 80px;
-    border-radius: 12px;
-    object-fit: cover;
-}
-
-.chakra-label {
-    display: block;
-    font-size: 1.15rem;
-    color: #F44336;
-    font-weight: 600;
-    margin-top: 0.2rem;
-}
-
-.desc-subcard-row {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-}
-.desc-subcard {
-    background: #fff;
-    border-radius: 10px;
-    padding: 1.2rem;
-    font-size: 1.1rem;
-    color: #333;
-    flex: 1;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ececec;
-}
-.card-features-row {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-}
-.feature-chip {
-    display: inline-block;
-    background: #F44336;
-    color: white;
-    border-radius: 20px;
-    padding: 0.5em 1em;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-right: 0.5em;
-    margin-bottom: 0.2em;
-    box-shadow: 0 1px 4px rgba(244,67,54,0.07);
-    transition: background 0.2s, color 0.2s;
-}
-.feature-chip:hover {
-    background: #F44336;
-    color: #fff;
-}
-@media (max-width: 900px) {
-    .desc-subcard-row {
-        flex-direction: column;
-        gap: 0.7rem;
-    }
-    .card-features-row {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0.7rem;
-        justify-content: flex-start;
-    }
-    .card-description-row {
-        flex-direction: column;
-        gap: 0.7rem;
-    }
-}
-/* Reset and base styles */
+/* ===================================
+   RESET & BASE STYLES
+   =================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Navbar */
+body {
+    font-family: 'Poppins', 'Inter', Arial, sans-serif;
+    background: var(--color-bg-white);
+    color: var(--color-text-primary);
+    font-size: var(--font-lg);
+    overflow-x: hidden;
+}
+
+/* ===================================
+   LAYOUT
+   =================================== */
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: var(--spacing-sm);
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===================================
+   NAVBAR
+   =================================== */
 .navbar {
     position: fixed;
     top: 0;
@@ -125,13 +98,13 @@ body {
     backdrop-filter: blur(30px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    padding: 1rem 0;
-    transition: transform 0.3s ease;
+    padding: var(--spacing-sm) 0;
+    transition: transform var(--transition-base);
     transform: translateY(-100%);
 }
 
 .navbar-content {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -143,165 +116,32 @@ body {
     align-items: center;
     text-decoration: none;
     cursor: pointer;
-    transition: opacity 0.3s ease;
-}
-
-.navbar-logo {
-    height: 28px;
-    width: auto;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-}
-
-.navbar-brand:hover .navbar-logo {
-    transform: scale(1.05);
+    transition: opacity var(--transition-base);
 }
 
 .navbar-brand:hover {
     opacity: 0.7;
 }
 
-/* Responsive navbar */
-@media (max-width: 768px) {
-    .navbar-logo {
-        height: 24px;
-    }
+.navbar-logo {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+    transition: transform var(--transition-base);
 }
 
-/* Modern Chakra Card Styles */
-.chakra-card {
-    background: #f5f6fa;
-    border-radius: 18px;
-    margin: 2rem auto;
-    max-width: 770px;
-    padding: 1rem 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
+.navbar-brand:hover .navbar-logo {
+    transform: scale(1.05);
 }
 
-.card-header {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-}
-
-.card-icon {
-    width: 104px;
-    height: 104px;
-    border-radius: 12px;
-    object-fit: cover;
-}
-/* Apple Store Icon Link */
-.apple-store-icon-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    margin-left: 0.5rem;
-    cursor: pointer;
-}
-.apple-store-icon-link:hover .apple-store-icon {
-    filter: brightness(0.8);
-}
-.apple-store-icon {
-    width: 156px;
-    height: 156px;
-    vertical-align: middle;
-}
-
-.chakra-label {
-    display: block;
-    font-size: 1rem;
-    color: #F44336;
-    font-weight: 600;
-    margin-top: 0.2rem;
-}
-
-.card-description {
-    font-size: 1.05rem;
-    color: #333;
-}
-
-.card-features {
-    list-style: disc inside;
-    margin: 0;
-    padding-left: 1rem;
-    color: #222;
-}
-
-.card-related-apps {
-    margin-top: 0.1rem;
-}
-
-.related-icons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 0.5rem;
-}
-
-.related-app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 64px;
-}
-
-.related-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    background: #fbeee6;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-    margin-bottom: 0.2rem;
-}
-
-@media (max-width: 600px) {
-    .chakra-card {
-        max-width: 98vw;
-        padding: 1.2rem 0.5rem;
-    }
-    .card-header {
-        gap: 0.5rem;
-    }
-    .card-icon {
-        width: 48px;
-        height: 48px;
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar-logo {
-        height: 20px;
-    }
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #ffffff;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-/* Circular Apps Layout */
+/* ===================================
+   CIRCULAR APPS LAYOUT
+   =================================== */
 .apps-circle {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem 0;
+    margin: var(--spacing-sm) 0;
     flex: 1;
     min-height: 80vh;
 }
@@ -321,8 +161,8 @@ body {
     transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
-    background: white;
-    border-radius: 50%;
+    background: var(--color-bg-white);
+    border-radius: var(--radius-round);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -335,25 +175,16 @@ body {
     width: 140px !important;
     height: 140px !important;
     object-fit: cover !important;
-    border-radius: 50% !important;
-    transition: transform 0.3s ease;
-    overflow: hidden;
+    border-radius: var(--radius-round) !important;
+    -webkit-border-radius: var(--radius-round) !important;
+    -moz-border-radius: var(--radius-round) !important;
+    transition: transform var(--transition-base);
+    overflow: hidden !important;
 }
 
 .central-logo:hover {
     transform: scale(1.1);
 }
-
-/* Forzar estilo redondo - backup */
-img.central-logo {
-    border-radius: 50% !important;
-    -webkit-border-radius: 50% !important;
-    -moz-border-radius: 50% !important;
-    object-fit: cover !important;
-    overflow: hidden !important;
-}
-
-
 
 /* App Circles */
 .app-circle {
@@ -393,75 +224,69 @@ img.central-logo {
     transform: translate(-50%, -50%) rotate(308.4deg) translateY(-230px) rotate(-308.4deg);
 }
 
-/* App Progress Container */
+/* App Progress */
 .app-progress {
     position: relative;
     width: 100%;
     height: 100%;
-    border-radius: 50%;
-    background: white;
+    border-radius: var(--radius-round);
+    background: var(--color-bg-white);
     overflow: hidden;
-    transition: all 0.3s ease;
+    transition: all var(--transition-base);
 }
 
 .app-progress:hover {
     cursor: pointer;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Progress Fill - fills from bottom to top */
+/* Progress Fill */
 .progress-fill {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    transition: height 0.8s ease;
+    height: 100% !important;
+    background: var(--color-disabled);
+    transition: height var(--transition-slow);
     border-radius: 0 0 50% 50%;
 }
 
-/* App Status - Default is disabled (gray) */
-.app-circle .progress-fill {
-    background: #e7e6e6; /* Gray - Disabled */
-    height: 100% !important;
-}
-
-/* Live Apps - Active with their chakra colors */
+/* Live Apps with Chakra Colors */
 .app-circle[data-status="live"] .progress-fill {
-    background: #F44336; /* Red - Live indicator */
+    background: var(--color-root);
 }
 
 .app-circle[data-app="money"][data-status="live"] .progress-fill {
-    background: #F44336; /* Rojo - Chakra Raíz */
+    background: var(--color-root);
 }
 
 .app-circle[data-app="crea"][data-status="live"] .progress-fill {
-    background: #FF9800; /* Naranja - Chakra Sacro */
+    background: var(--color-sacral);
 }
 
 .app-circle[data-app="control"][data-status="live"] .progress-fill {
-    background: #FFEB3B; /* Amarillo - Chakra Ombligo */
+    background: var(--color-solar);
 }
 
 .app-circle[data-app="genius"][data-status="live"] .progress-fill {
-    background: #4CAF50; /* Verde - Chakra Corazón */
+    background: var(--color-heart);
 }
 
 .app-circle[data-app="express"][data-status="live"] .progress-fill {
-    background: #03A9F4; /* Azul - Chakra Garganta */
+    background: var(--color-throat);
 }
 
 .app-circle[data-app="totem"][data-status="live"] .progress-fill {
-    background: #3F51B5; /* Índigo - Chakra Tercer Ojo */
+    background: var(--color-third-eye);
 }
 
 .app-circle[data-app="dreams"][data-status="live"] .progress-fill {
-    background: #991fff; /* Violeta - Chakra Corona */
+    background: var(--color-crown);
 }
 
-
-
-/* App Icon */
+/* App Icon & Label */
 .app-icon {
     position: absolute;
     top: 50%;
@@ -473,137 +298,20 @@ img.central-logo {
     z-index: 5;
 }
 
-/* App Label */
 .app-label {
     position: absolute;
     bottom: -25px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 0.9rem;
+    font-size: var(--font-sm);
     font-weight: 500;
-    color: #000;
+    color: var(--color-text-primary);
     white-space: nowrap;
 }
 
-/* Footer */
-.footer {
-    padding: 1rem 0;
-    text-align: center;
-    margin-top: auto;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.footer-links a {
-    color: #000;
-    text-decoration: none;
-    font-weight: 500;
-    transition: opacity 0.3s ease;
-}
-
-.footer-links a:hover {
-    opacity: 0.7;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .container {
-        padding: 1rem;
-        padding-top: 50px;
-    }
-    
-    .apps-circle {
-        margin: 0.5rem 0;
-        min-height: 70vh;
-    }
-    
-    .circle-container {
-        width: 500px;
-        height: 500px;
-    }
-    
-    .central-circle {
-        width: 140px;
-        height: 140px;
-    }
-    
-    .central-logo {
-        width: 110px;
-        height: 110px;
-        border-radius: 50%;
-    }
-    
-    /* Mobile phones */
-    @media (max-width: 480px) {
-        .central-logo {
-            width: 85px;
-            height: 85px;
-            border-radius: 50%;
-        }
-    }
-    
-    /* Very small screens */
-    @media (max-width: 360px) {
-        .central-logo {
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-        }
-    }
-    
-    .app-circle {
-        width: 80px;
-        height: 80px;
-    }
-    
-    .app-circle[data-angle="0"] {
-        transform: translate(-50%, -50%) rotate(0deg) translateY(-150px) rotate(0deg);
-    }
-    
-    .app-circle[data-angle="51.4"] {
-        transform: translate(-50%, -50%) rotate(51.4deg) translateY(-150px) rotate(-51.4deg);
-    }
-    
-    .app-circle[data-angle="102.8"] {
-        transform: translate(-50%, -50%) rotate(102.8deg) translateY(-150px) rotate(-102.8deg);
-    }
-    
-    .app-circle[data-angle="154.2"] {
-        transform: translate(-50%, -50%) rotate(154.2deg) translateY(-150px) rotate(-154.2deg);
-    }
-    
-    .app-circle[data-angle="205.6"] {
-        transform: translate(-50%, -50%) rotate(205.6deg) translateY(-150px) rotate(-205.6deg);
-    }
-    
-    .app-circle[data-angle="257"] {
-        transform: translate(-50%, -50%) rotate(257deg) translateY(-150px) rotate(-257deg);
-    }
-    
-    .app-circle[data-angle="308.4"] {
-        transform: translate(-50%, -50%) rotate(308.4deg) translateY(-150px) rotate(-308.4deg);
-    }
-    
-    .app-icon {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .app-label {
-        font-size: 0.8rem;
-        bottom: -20px;
-    }
-    
-
-    
-
-}
-
-/* Chakra Sections */
+/* ===================================
+   CHAKRA SECTIONS
+   =================================== */
 .chakra-section {
     padding: 80px 20px;
     min-height: 100vh;
@@ -613,10 +321,8 @@ img.central-logo {
     scroll-margin-top: 100px;
 }
 
-
-
 .section-content {
-    max-width: 800px;
+    max-width: var(--content-max);
     text-align: center;
     margin: 0 auto;
 }
@@ -636,67 +342,6 @@ img.central-logo {
     gap: 10px;
 }
 
-.status-chip {
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-/* Chakra-specific chip colors */
-.money-chakra .status-chip.available {
-    background: #F44336; /* Rojo - Chakra Raíz */
-    color: white;
-}
-
-.crea-chakra .status-chip.available {
-    background: #FF9800; /* Naranja - Chakra Sacro */
-    color: white;
-}
-
-.control-chakra .status-chip.available {
-    background: #FFEB3B; /* Amarillo - Chakra Ombligo */
-    color: #333;
-}
-
-.genius-chakra .status-chip.available {
-    background: #4CAF50; /* Verde - Chakra Corazón */
-    color: white;
-}
-
-.express-chakra .status-chip.available {
-    background: #03A9F4; /* Azul - Chakra Garganta */
-    color: white;
-}
-
-.totem-chakra .status-chip.available {
-    background: #3F51B5; /* Índigo - Chakra Tercer Ojo */
-    color: white;
-}
-
-.dreams-chakra .status-chip.available {
-    background: #991fff; /* Violeta - Chakra Corona */
-    color: white;
-}
-
-/* Hover effects for available chips */
-.status-chip.available:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.status-chip.disabled {
-    background: #9e9e9e;
-    color: white;
-    cursor: default;
-}
-
 .chakra-icon {
     width: 80px;
     height: 80px;
@@ -704,62 +349,86 @@ img.central-logo {
 }
 
 .chakra-section h2 {
-    font-size: 2.5rem;
+    font-size: var(--font-2xl);
     font-weight: 600;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--color-text-secondary);
+}
+
+.chakra-section h3 {
+    font-weight: 600;
+    color: var(--color-text-secondary);
 }
 
 .chakra-section p {
-    font-size: 1.1rem;
+    font-size: var(--font-md);
     line-height: 1.8;
-    color: #666;
+    color: var(--color-text-tertiary);
     margin-bottom: 0;
 }
 
-/* Donation Section */
-.donation-section {
-    margin-top: 40px;
-    padding: 30px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 20px;
-    border: 2px solid #dee2e6;
-}
-
-.donation-text {
-    font-size: 1.2rem;
-    color: #495057;
-    margin-bottom: 20px;
-    font-weight: 500;
-}
-
-.donation-button {
-    display: inline-block;
-    background: #6c757d;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 50px;
-    text-decoration: none;
+/* Status Chips */
+.status-chip {
+    padding: 4px 12px;
+    border-radius: var(--radius-xl);
+    font-size: 0.75rem;
     font-weight: 600;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all var(--transition-base);
+    cursor: pointer;
 }
 
-.donation-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(108, 117, 125, 0.5);
-    background: #5a6268;
-    color: #fff;
+.status-chip.available:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-
-/* Disabled section effect */
-.chakra-section.disabled {
-    transition: all 0.3s ease;
+.status-chip.disabled {
+    background: #9e9e9e;
+    color: var(--color-bg-white);
+    cursor: default;
 }
 
+/* Chakra-specific Status Chip Colors */
+.money-chakra .status-chip.available {
+    background: var(--color-root);
+    color: var(--color-bg-white);
+}
+
+.crea-chakra .status-chip.available {
+    background: var(--color-sacral);
+    color: var(--color-bg-white);
+}
+
+.control-chakra .status-chip.available {
+    background: var(--color-solar);
+    color: var(--color-text-secondary);
+}
+
+.genius-chakra .status-chip.available {
+    background: var(--color-heart);
+    color: var(--color-bg-white);
+}
+
+.express-chakra .status-chip.available {
+    background: var(--color-throat);
+    color: var(--color-bg-white);
+}
+
+.totem-chakra .status-chip.available {
+    background: var(--color-third-eye);
+    color: var(--color-bg-white);
+}
+
+.dreams-chakra .status-chip.available {
+    background: var(--color-crown);
+    color: var(--color-bg-white);
+}
+
+/* Disabled Section Effect */
 .chakra-section.disabled .chakra-icon {
     filter: grayscale(100%);
     opacity: 0.7;
@@ -772,83 +441,206 @@ img.central-logo {
     pointer-events: none;
 }
 
-.chakra-section.disabled h2 {
-    filter: none;
-    opacity: 1;
+/* Donation Section */
+.donation-text {
+    font-size: 1.2rem;
+    color: #495057;
+    margin-bottom: 20px;
+    font-weight: 500;
 }
 
-.chakra-section.disabled p {
-    filter: none;
-    opacity: 1;
+.donation-button {
+    display: inline-block;
+    background: #6c757d;
+    color: var(--color-bg-white);
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--font-md);
+    transition: all var(--transition-base);
+    box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
 }
 
-
-
-/* Responsive Design for Chakra Sections */
-@media (max-width: 768px) {
-    .chakra-section {
-        padding: 60px 15px;
-    }
-    
-    .chakra-header {
-        flex-direction: column;
-        gap: 15px;
-    }
-    
-    .chakra-icon {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .chakra-section h2 {
-        font-size: 2rem;
-    }
-    
-    .chakra-section p {
-        font-size: 1rem;
-    }
-    
-    .chakra-title-container {
-        gap: 8px;
-    }
-    
-    .status-chip {
-        font-size: 0.7rem;
-        padding: 3px 10px;
-    }
+.donation-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(108, 117, 125, 0.5);
+    background: #5a6268;
+    color: var(--color-bg-white);
 }
 
-/* Footer */
+/* ===================================
+   CHAKRA CARD (Money App)
+   =================================== */
+.chakra-card {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-lg);
+    margin: var(--spacing-xs) auto var(--spacing-lg) auto;
+    max-width: var(--card-max);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.card-header-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header-main h2 {
+    margin: 0;
+    font-size: var(--font-xl);
+}
+
+.card-icon {
+    width: 104px;
+    height: 104px;
+    border-radius: var(--radius-md);
+    object-fit: cover;
+}
+
+.chakra-label {
+    display: block;
+    font-size: var(--font-base);
+    color: var(--color-root);
+    font-weight: 600;
+    margin-top: 0.2rem;
+}
+
+/* Apple Store Icon */
+.apple-store-icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.apple-store-icon-link:hover .apple-store-icon {
+    filter: brightness(0.8);
+}
+
+.apple-store-icon {
+    width: 156px;
+    height: 156px;
+    vertical-align: middle;
+}
+
+/* Card Description */
+.card-description-row {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.desc-subcard-row {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.desc-subcard {
+    background: var(--color-bg-white);
+    border-radius: 10px;
+    padding: 1.2rem;
+    font-size: var(--font-md);
+    color: var(--color-text-secondary);
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-border-subtle);
+}
+
+/* Card Features */
+.card-features-row {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
+}
+
+.feature-chip {
+    display: inline-block;
+    background: var(--color-root);
+    color: var(--color-bg-white);
+    border-radius: var(--radius-xl);
+    padding: 0.5em 1em;
+    font-size: var(--font-sm);
+    font-weight: 500;
+    margin-right: 0.5em;
+    margin-bottom: 0.2em;
+    box-shadow: 0 1px 4px rgba(244, 67, 54, 0.07);
+    transition: background var(--transition-fast), color var(--transition-fast);
+}
+
+.feature-chip:hover {
+    background: var(--color-root);
+    color: var(--color-bg-white);
+}
+
+/* Related Apps */
+.card-related-apps {
+    margin-top: 0.1rem;
+}
+
+.related-apps-label {
+    font-size: var(--font-base);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-xs);
+    display: block;
+}
+
+.related-icons {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-xs);
+}
+
+.related-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 64px;
+}
+
+.related-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-sm);
+    background: #fbeee6;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+    margin-bottom: 0.2rem;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
 .footer {
-    background: #f8f9fa;
+    background: var(--color-bg-light);
     padding: 40px 0;
     margin-top: 60px;
-    border-top: 1px solid #e9ecef;
+    border-top: 1px solid var(--color-border);
 }
 
 .footer-content {
-    max-width: 1200px;
+    max-width: var(--container-max);
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 var(--spacing-sm);
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.footer-signature {
-    font-weight: 500;
-    color: #888;
-    font-size: 1rem;
-}
-
-@media (max-width: 768px) {
-    .footer-content {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .footer-signature {
-        margin-top: 10px;
-    }
 }
 
 .footer-links {
@@ -863,42 +655,224 @@ img.central-logo {
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color var(--transition-base);
     padding: 8px 0;
 }
 
 .footer-links a:hover {
-    color: #000;
+    color: var(--color-text-primary);
 }
 
 .footer-links a[href*="coff.ee"] {
     background: #6c757d;
-    color: #fff;
+    color: var(--color-bg-white);
     padding: 8px 16px;
-    border-radius: 20px;
+    border-radius: var(--radius-xl);
     font-weight: 600;
-    transition: all 0.3s ease;
+    transition: all var(--transition-base);
 }
 
 .footer-links a[href*="coff.ee"]:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(108, 117, 125, 0.4);
     background: #5a6268;
-    color: #fff;
+    color: var(--color-bg-white);
 }
 
-/* Responsive Footer */
+.footer-signature {
+    font-weight: 500;
+    color: var(--color-text-muted);
+    font-size: var(--font-base);
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+/* Tablet & Below */
+@media (max-width: 900px) {
+    .desc-subcard-row {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .card-features-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        justify-content: flex-start;
+    }
+
+    .card-description-row {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+}
+
 @media (max-width: 768px) {
+    /* Layout */
+    .container {
+        padding: var(--spacing-sm);
+        padding-top: 50px;
+    }
+
+    /* Navbar */
+    .navbar-logo {
+        height: 24px;
+    }
+
+    /* Circular Apps */
+    .apps-circle {
+        margin: var(--spacing-xs) 0;
+        min-height: 70vh;
+    }
+
+    .circle-container {
+        width: 500px;
+        height: 500px;
+    }
+
+    .central-circle {
+        width: 140px;
+        height: 140px;
+    }
+
+    .central-logo {
+        width: 110px !important;
+        height: 110px !important;
+    }
+
+    .app-circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .app-circle[data-angle="0"] {
+        transform: translate(-50%, -50%) rotate(0deg) translateY(-150px) rotate(0deg);
+    }
+
+    .app-circle[data-angle="51.4"] {
+        transform: translate(-50%, -50%) rotate(51.4deg) translateY(-150px) rotate(-51.4deg);
+    }
+
+    .app-circle[data-angle="102.8"] {
+        transform: translate(-50%, -50%) rotate(102.8deg) translateY(-150px) rotate(-102.8deg);
+    }
+
+    .app-circle[data-angle="154.2"] {
+        transform: translate(-50%, -50%) rotate(154.2deg) translateY(-150px) rotate(-154.2deg);
+    }
+
+    .app-circle[data-angle="205.6"] {
+        transform: translate(-50%, -50%) rotate(205.6deg) translateY(-150px) rotate(-205.6deg);
+    }
+
+    .app-circle[data-angle="257"] {
+        transform: translate(-50%, -50%) rotate(257deg) translateY(-150px) rotate(-257deg);
+    }
+
+    .app-circle[data-angle="308.4"] {
+        transform: translate(-50%, -50%) rotate(308.4deg) translateY(-150px) rotate(-308.4deg);
+    }
+
+    .app-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .app-label {
+        font-size: 0.8rem;
+        bottom: -20px;
+    }
+
+    /* Chakra Sections */
+    .chakra-section {
+        padding: 60px 15px;
+    }
+
+    .chakra-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .chakra-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .chakra-section h2 {
+        font-size: var(--font-xl);
+    }
+
+    .chakra-section p {
+        font-size: var(--font-base);
+    }
+
+    .chakra-title-container {
+        gap: 8px;
+    }
+
+    .status-chip {
+        font-size: var(--font-xs);
+        padding: 3px 10px;
+    }
+
+    /* Footer */
     .footer {
         padding: 30px 0;
         margin-top: 40px;
     }
-    
+
+    .footer-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .footer-links {
         gap: 30px;
     }
-    
+
     .footer-links a {
-        font-size: 0.9rem;
+        font-size: var(--font-sm);
+    }
+
+    .footer-signature {
+        margin-top: 10px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+    .chakra-card {
+        max-width: 98vw;
+        padding: 1.2rem var(--spacing-xs);
+    }
+
+    .card-header {
+        gap: var(--spacing-xs);
+    }
+
+    .card-icon {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-logo {
+        height: 20px;
+    }
+
+    .central-logo {
+        width: 85px !important;
+        height: 85px !important;
+    }
+}
+
+/* Very Small Screens */
+@media (max-width: 360px) {
+    .central-logo {
+        width: 70px !important;
+        height: 70px !important;
     }
 }
