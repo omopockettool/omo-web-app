@@ -1,60 +1,56 @@
-/* Feature chips style */
-.feature-chip {
-    display: inline-block;
-    background: #F44336;
-    color: white;
-    border-radius: 20px;
-    padding: 0.5em 1.2em;
-    font-size: 0.80rem;
+/* --- MAIN CARD STYLES --- */
+body {
+    font-family: 'Inter', 'Poppins', Arial, sans-serif;
+    background: #ffffff;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 1.25rem;
+}
+
+.related-apps-label {
+    font-size: 1rem;
     font-weight: 500;
-    margin-right: 0.5em;
-    margin-bottom: 0.3em;
-    box-shadow: 0 1px 4px rgba(244,67,54,0.07);
-    transition: background 0.2s, color 0.2s;
-}
-.feature-chip:hover {
-    background: #F44336;
-    color: #fff;
-}
-/* Description sub-card rows for better balance */
-.desc-subcard-row {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    color: #333;
     margin-bottom: 0.5rem;
+    display: block;
 }
-@media (max-width: 900px) {
-    .desc-subcard-row {
-        flex-direction: column;
-        gap: 0.7rem;
-    }
-}
-/* Card header title row for button placement */
-.card-header-title {
+
+.chakra-card {
+    background: #f5f6fa;
+    border-radius: 18px;
+    margin: 0.5rem auto 2rem auto;
+    max-width: 700px;
+    height: 100%;
+    padding: 2.5rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 1.5rem;
 }
-.card-title-row {
+
+.card-header {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
-/* Features sub-cards row */
-.card-features-row {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
+
+.card-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
 }
-@media (max-width: 900px) {
-    .card-features-row {
-        flex-direction: column;
-        gap: 0.7rem;
-    }
+
+.chakra-label {
+    display: block;
+    font-size: 1.15rem;
+    color: #F44336;
+    font-weight: 600;
+    margin-top: 0.2rem;
 }
-/* Description sub-cards row */
-.card-description-row {
+
+.desc-subcard-row {
     display: flex;
     flex-direction: row;
     gap: 1rem;
@@ -63,14 +59,50 @@
 .desc-subcard {
     background: #fff;
     border-radius: 10px;
-    padding: 1rem;
-    font-size: 1rem;
+    padding: 1.2rem;
+    font-size: 1.1rem;
     color: #333;
     flex: 1;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid #ececec;
 }
+.card-features-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+.feature-chip {
+    display: inline-block;
+    background: #F44336;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-right: 0.5em;
+    margin-bottom: 0.2em;
+    box-shadow: 0 1px 4px rgba(244,67,54,0.07);
+    transition: background 0.2s, color 0.2s;
+}
+.feature-chip:hover {
+    background: #F44336;
+    color: #fff;
+}
 @media (max-width: 900px) {
+    .desc-subcard-row {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    .card-features-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.7rem;
+        justify-content: flex-start;
+    }
     .card-description-row {
         flex-direction: column;
         gap: 0.7rem;
@@ -141,22 +173,22 @@
     background: #f5f6fa;
     border-radius: 18px;
     margin: 2rem auto;
-    max-width: 700px;
-    padding: 2rem 1.5rem;
+    max-width: 770px;
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 0.6rem;
 }
 
 .card-header {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .card-icon {
-    width: 64px;
-    height: 64px;
+    width: 104px;
+    height: 104px;
     border-radius: 12px;
     object-fit: cover;
 }
@@ -199,7 +231,7 @@
 }
 
 .card-related-apps {
-    margin-top: 1rem;
+    margin-top: 0.1rem;
 }
 
 .related-icons {
