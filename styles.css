@@ -481,6 +481,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-lg);
+    scroll-margin-top: 80px;
 }
 
 .omo-card-header {
@@ -572,6 +573,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
+    scroll-margin-top: 50px;
 }
 
 .card-header {
@@ -949,6 +951,11 @@ body {
         height: 48px;
     }
 
+    .apple-store-icon {
+        width: 80px;
+        height: 80px;
+    }
+
     /* OMO Introduction Card */
     .omo-intro-card {
         max-width: 98vw;
@@ -1001,6 +1008,11 @@ body {
     .central-logo {
         width: 85px !important;
         height: 85px !important;
+    }
+
+    .apple-store-icon {
+        width: 100px;
+        height: 100px;
     }
 }
 
