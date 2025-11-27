@@ -205,3 +205,6 @@ coverage/
 
 # Specific to this project - exclude chakras folder as requested
 chakras colored and empty/ 
+
+# Ignore clip directory
+clips/

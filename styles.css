@@ -685,20 +685,28 @@ body {
 /* Related Apps */
 .card-related-apps {
     margin-top: 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.related-apps-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
 }
 
 .related-apps-label {
     font-size: var(--font-base);
     font-weight: 500;
     color: var(--color-text-secondary);
-    margin-bottom: var(--spacing-xs);
     display: block;
 }
 
 .related-icons {
     display: flex;
     gap: var(--spacing-sm);
-    margin-top: var(--spacing-xs);
 }
 
 .related-app {
@@ -715,6 +723,34 @@ body {
     background: #fbeee6;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
     margin-bottom: 0.2rem;
+}
+
+.learn-more-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #6c757d 0%, #5a6268 100%);
+    color: var(--color-bg-white);
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: var(--font-base);
+    transition: all var(--transition-base);
+}
+
+.learn-more-button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #5a6268 0%, #495057 100%);
+}
+
+.learn-more-button .arrow-icon {
+    font-size: 1.2rem;
+    transition: transform var(--transition-base);
+}
+
+.learn-more-button:hover .arrow-icon {
+    transform: translateX(4px);
 }
 
 /* ===================================
@@ -954,6 +990,26 @@ body {
     .apple-store-icon {
         width: 80px;
         height: 80px;
+    }
+
+    .learn-more-button {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+
+    .card-related-apps {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-md);
+    }
+
+    .related-apps-left {
+        align-items: center;
+    }
+
+    .learn-more-button {
+        width: 100%;
+        justify-content: center;
     }
 
     /* OMO Introduction Card */
