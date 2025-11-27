@@ -587,9 +587,53 @@ body {
     flex-direction: column;
 }
 
+.card-title-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
 .card-header-main h2 {
     margin: 0;
     font-size: var(--font-xl);
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge.in-progress {
+    background: #4a4a4a;
+    color: var(--color-bg-white);
+}
+
+.led-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #6cff71;
+    box-shadow: 0 0 8px rgba(108, 255, 113, 0.8);
+    animation: led-blink 2s ease-in-out infinite;
+}
+
+@keyframes led-blink {
+    0%, 100% {
+        opacity: 1;
+        box-shadow: 0 0 8px rgba(108, 255, 113, 0.8);
+    }
+    50% {
+        opacity: 0.3;
+        box-shadow: 0 0 4px rgba(108, 255, 113, 0.4);
+    }
 }
 
 .card-icon {
@@ -619,6 +663,13 @@ body {
 
 .apple-store-icon-link:hover .apple-store-icon {
     filter: brightness(0.8);
+}
+
+.apple-store-icon-link.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+    filter: grayscale(100%);
 }
 
 .apple-store-icon {
@@ -655,12 +706,22 @@ body {
     border: 1px solid var(--color-border-subtle);
 }
 
+/* Card Bottom Row - 2 Column Layout */
+.card-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xs);
+}
+
 /* Card Features */
 .card-features-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: var(--spacing-sm);
-    margin-bottom: var(--spacing-xs);
+    flex: 1;
 }
 
 .feature-chip {
@@ -671,8 +732,6 @@ body {
     padding: 0.5em 1em;
     font-size: var(--font-sm);
     font-weight: 500;
-    margin-right: 0.5em;
-    margin-bottom: 0.2em;
     box-shadow: 0 1px 4px rgba(244, 67, 54, 0.07);
     transition: background var(--transition-fast), color var(--transition-fast);
 }
@@ -682,47 +741,12 @@ body {
     color: var(--color-bg-white);
 }
 
-/* Related Apps */
-.card-related-apps {
-    margin-top: 0.1rem;
+/* Card Action Column */
+.card-action-column {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: var(--spacing-md);
-}
-
-.related-apps-left {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-xs);
-}
-
-.related-apps-label {
-    font-size: var(--font-base);
-    font-weight: 500;
-    color: var(--color-text-secondary);
-    display: block;
-}
-
-.related-icons {
-    display: flex;
-    gap: var(--spacing-sm);
-}
-
-.related-app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 64px;
-}
-
-.related-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: var(--radius-sm);
-    background: #fbeee6;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
-    margin-bottom: 0.2rem;
+    justify-content: flex-end;
+    flex-shrink: 0;
 }
 
 .learn-more-button {
@@ -825,6 +849,17 @@ body {
         gap: 0.7rem;
     }
 
+    .card-description-row {
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+
+    .card-bottom-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-md);
+    }
+
     .card-features-row {
         flex-direction: row;
         flex-wrap: wrap;
@@ -832,9 +867,13 @@ body {
         justify-content: flex-start;
     }
 
-    .card-description-row {
-        flex-direction: column;
-        gap: 0.7rem;
+    .card-action-column {
+        justify-content: center;
+    }
+
+    .learn-more-button {
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -987,6 +1026,21 @@ body {
         height: 48px;
     }
 
+    .card-title-row {
+        gap: 0.5rem;
+    }
+
+    .status-badge {
+        font-size: 0.65rem;
+        padding: 3px 10px;
+        gap: 6px;
+    }
+
+    .led-indicator {
+        width: 6px;
+        height: 6px;
+    }
+
     .apple-store-icon {
         width: 80px;
         height: 80px;
@@ -995,21 +1049,6 @@ body {
     .learn-more-button {
         padding: 10px 24px;
         font-size: 0.95rem;
-    }
-
-    .card-related-apps {
-        flex-direction: column;
-        align-items: stretch;
-        gap: var(--spacing-md);
-    }
-
-    .related-apps-left {
-        align-items: center;
-    }
-
-    .learn-more-button {
-        width: 100%;
-        justify-content: center;
     }
 
     /* OMO Introduction Card */
