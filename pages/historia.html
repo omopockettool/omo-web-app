@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Historia — Dennis, OMO</title>
+    <link rel="icon" type="image/png" href="../assets/icon.png">
+    <link rel="stylesheet" href="../styles.css?v=2.0.0">
+    <link rel="stylesheet" href="historia_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="detail-navbar">
+        <div class="navbar-content">
+            <a href="../index.html" class="back-button">
+                <span class="back-arrow">←</span>
+                <span>OMO</span>
+            </a>
+        </div>
+    </nav>
+
+    <main class="historia-container">
+
+        <!-- Page Header -->
+        <header class="historia-header">
+            <p class="historia-page-label">On My Own</p>
+            <h1 class="historia-page-title">Mi Historia</h1>
+            <p class="historia-page-sub">Cómo se construye algo desde cero, con lo que tienes, desde donde estás.</p>
+        </header>
+
+        <!-- Timeline -->
+        <div class="historia-timeline">
+
+            <!-- Node 1 — Age 17 -->
+            <div class="timeline-node">
+                <div class="timeline-marker">
+                    <span>17</span>
+                </div>
+                <div class="timeline-content-card">
+                    <h2 class="timeline-title">La primera app</h2>
+                    <p class="timeline-body">
+                        Tenía 17 años, una computadora vieja y Android Studio.
+                        No tenía dinero, no tenía mentores, no tenía internet rápido.
+                        Solo tenía la necesidad de crear algo que fuera mío.
+                    </p>
+                    <p class="timeline-body">
+                        Esa primera app no era perfecta — ni siquiera era buena.
+                        Pero fue mía. Y eso lo cambió todo.
+                    </p>
+                    <div class="timeline-chip-row">
+                        <span class="timeline-chip">Android Studio</span>
+                        <span class="timeline-chip">Primera app</span>
+                        <span class="timeline-chip">Pasión encendida</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-connector"></div>
+
+            <!-- Node 2 — Age 21 -->
+            <div class="timeline-node">
+                <div class="timeline-marker">
+                    <span>21</span>
+                </div>
+                <div class="timeline-content-card">
+                    <h2 class="timeline-title">El jardín y el Mac</h2>
+                    <p class="timeline-body">
+                        Trabajé como jardinero durante meses.
+                        Corté césped, planté árboles, cuidé jardines.
+                        Cada día pensaba en el Mac que estaba comprando con esas horas.
+                    </p>
+                    <p class="timeline-body">
+                        Cuando llegó, no descansé hasta entender Xcode, Swift, SwiftUI.
+                        El cambio a iOS no fue una decisión de mercado — fue una decisión de diseño.
+                        Apple construía las interfaces más humanas del mundo.
+                        Yo quería hacer lo mismo.
+                    </p>
+                    <div class="timeline-chip-row">
+                        <span class="timeline-chip">Primer Mac</span>
+                        <span class="timeline-chip">iOS</span>
+                        <span class="timeline-chip">SwiftUI</span>
+                        <span class="timeline-chip">Pivote definitivo</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-connector timeline-connector--open"></div>
+
+            <!-- Node 3 — Open / Aspirational -->
+            <div class="timeline-node">
+                <div class="timeline-marker timeline-marker--open">
+                    <span>···</span>
+                </div>
+                <div class="timeline-content-card timeline-card--open">
+                    <h2 class="timeline-title">Lo que estoy construyendo</h2>
+                    <p class="timeline-body">
+                        OMO no es solo un conjunto de apps.
+                        Es la demostración de que se puede construir algo con intención, desde cero, solo.
+                    </p>
+                    <p class="timeline-body">
+                        El primer uxOS del mundo. Pocket Tools for Conscious Living.
+                        Esto es lo que soy capaz de hacer. Y apenas empieza.
+                    </p>
+                    <a href="../index.html" class="learn-more-button" style="align-self: flex-start; margin-top: 0.25rem;">
+                        Ver el ecosistema
+                        <span class="arrow-icon">→</span>
+                    </a>
+                </div>
+            </div>
+
+        </div><!-- end .historia-timeline -->
+
+    </main>
+
+    <div id="footer-container"></div>
+    <script src="../common/footer.js"></script>
+
+    <script>
+        // Timeline entrance animation
+        const timelineNodes = document.querySelectorAll('.timeline-node');
+        if (timelineNodes.length > 0 && 'IntersectionObserver' in window) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('timeline-node--visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            timelineNodes.forEach(node => observer.observe(node));
+        } else {
+            // Fallback: show all immediately
+            timelineNodes.forEach(node => node.classList.add('timeline-node--visible'));
+        }
+    </script>
+
+</body>
+</html>

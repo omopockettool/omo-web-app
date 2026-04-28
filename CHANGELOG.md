@@ -5,6 +5,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-04-28
+
+### Added
+- **OMO ecosystem redesign** — complete visual and conceptual overhaul aligned with the OMO philosophy and MAIN.md:
+  - New full-screen hero section with two-column layout (text + OMO logo)
+  - OMO ecosystem section replacing the old intro card copy
+  - Historia teaser section linking to the new "Mi Historia" page
+- **Mi Historia page** (`pages/historia.html`) — personal timeline with entrance scroll animation:
+  - Age 17: first Android app on an old computer
+  - Age 21: working as a gardener to buy first Mac, pivot to iOS/SwiftUI
+  - Open aspirational node describing the OMO vision
+- **`pages/historia_styles.css`** — self-contained timeline styles with IntersectionObserver fade-up animation
+- **`omo-logo.png`** used in hero visual and navbar
+
+### Changed
+- **Design system** — removed chakra-based color palette, replaced with monochromatic charcoal scale:
+  - Removed `--color-root/sacral/solar/heart/throat/third-eye/crown/disabled`
+  - Added `--color-accent`, `--color-accent-soft`, `--color-accent-muted`
+  - Feature chips updated from red (#F44336) to charcoal (#4a4a4a)
+- **index.html** — removed circular apps navigation and all 6 chakra sections (Crea, Control, Genius, Express, Totem, Dreams)
+- **OMONI card** — chakra label replaced with "Pocket Tool Nº 1", copy updated to OMO ecosystem voice
+- **omoni_detailed.html** — "Root Chakra - Money Tool" replaced with "Pocket Tool Nº 1", chakra description updated
+- **script.js** — stripped down from 219 to 19 lines; removed all circular nav, app status, and chakra section logic
+- **footer.js** — added "Mi Historia" link
+- **Navbar** — now uses `omo-logo.png` instead of `omo-letters.png`
+- **`html { scroll-behavior: smooth }`** added globally
+
+### Removed
+- Circular apps layout (`.apps-circle`, `.circle-container`, `.app-circle`, `.progress-fill`)
+- All 6 chakra section components and their per-chakra CSS rules
+- Chakra color variables and status chip color overrides
+- All "sin cuentas / no accounts" messaging from public-facing copy
+
 ## [1.1.0] - 2025-07-23
 
 ### Added

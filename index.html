@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OMO Pocket Tools</title>
-    
+    <title>OMO — Pocket Tools para una vida más consciente</title>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/icon.png">
     <link rel="apple-touch-icon" href="assets/icon.png">
     <link rel="shortcut icon" href="assets/icon.png">
     <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="styles.css?v=1.2.0">
+    <link rel="stylesheet" href="styles.css?v=2.0.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,231 +20,109 @@
     <nav class="navbar">
         <div class="navbar-content">
             <a href="#" class="navbar-brand" onclick="scrollToTop()">
-                <img src="assets/omo-letters.png" alt="OMO" class="navbar-logo">
+                <img src="assets/omo-logo.png" alt="OMO" class="navbar-logo">
             </a>
         </div>
     </nav>
 
     <main class="container">
-        <!-- Circular Progress Layout -->
-        <section class="apps-circle">
-            <div class="circle-container">
-                <!-- Central Circle -->
-                <div class="central-circle">
-                    <img src="assets/icon.png" alt="OMO" class="central-logo">
-                </div>
 
-                <!-- App Circles -->
-                <div class="app-circle" data-app="money" data-angle="0">
-                    <div class="app-progress">
-                        <div class="progress-fill"></div>
-                        <img src="assets/OMO_NI.jpg" alt="OMO NI" class="app-icon">
-                        <div class="app-label">Money</div>
-                    </div>
-                </div>
-
-                <div class="app-circle" data-app="crea" data-angle="51.4">
-                    <div class="app-progress">
-                        <div class="progress-fill"></div>
-                        <img src="assets/OMO_Crea.png" alt="OMO Crea" class="app-icon">
-                        <div class="app-label">Crea</div>
-                    </div>
-                </div>
-
-                <div class="app-circle" data-app="control" data-angle="102.8">
-                    <div class="app-progress">
-                        <div class="progress-fill"></div>
-                        <img src="assets/OMO_Control.png" alt="OMO Control" class="app-icon">
-                        <div class="app-label">Control</div>
-                    </div>
-                </div>
-
-                <div class="app-circle" data-app="genius" data-angle="154.2">
-                    <div class="app-progress">
-                        <div class="progress-fill"></div>
-                        <img src="assets/OMO_Genus.png" alt="OMO Genius" class="app-icon">
-                        <div class="app-label">Genius</div>
-                    </div>
-                </div>
-
-                <div class="app-circle" data-app="express" data-angle="205.6">
-                    <div class="app-progress">
-                        <div class="progress-fill"></div>
-                        <img src="assets/OMO_Express.png" alt="OMO Express" class="app-icon">
-                        <div class="app-label">Express</div>
-                    </div>
-                </div>
-
-                <div class="app-circle" data-app="totem" data-angle="257">
-                    <div class="app-progress">
-                        <div class="progress-fill"></div>
-                        <img src="assets/OMO_Totem.png" alt="OMO Totem" class="app-icon">
-                        <div class="app-label">Totem</div>
-                    </div>
-                </div>
-
-                <div class="app-circle" data-app="dreams" data-angle="308.4">
-                    <div class="app-progress">
-                        <div class="progress-fill"></div>
-                        <img src="assets/OMO_Dreams.png" alt="OMO Dreams" class="app-icon">
-                        <div class="app-label">Dreams</div>
-                    </div>
-                </div>
+        <!-- Hero -->
+        <section class="omo-hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Pocket Tools<br>para una vida más consciente</h1>
+                <p class="hero-sub">Un ecosistema de micro-apps diseñadas para acompañarte en la vida diaria. Sin ruido ni distracciones. On My Own.</p>
+                <a href="#ecosystem" class="hero-cta">Explorar OMO</a>
+            </div>
+            <div class="hero-visual">
+                <img src="assets/omo-logo.png" alt="OMO" class="hero-logo">
             </div>
         </section>
 
-        <!-- OMO Introduction Section -->
-        <section id="omo" class="omo-intro-card">
+        <!-- OMO Ecosystem Section -->
+        <section id="ecosystem" class="omo-intro-card">
             <div class="omo-card-header">
                 <div class="omo-header-content">
-                    <h2 class="omo-title">On My Own - Pocket Tools</h2>
+                    <h2 class="omo-title">El ecosistema OMO</h2>
+                    <p class="omo-tagline">uxOS es la manera más natural de interactuar con la tecnología.</p>
                 </div>
             </div>
             <div class="desc-subcard-row">
                 <div class="omo-description">
-                    <p>The philosophy of an awakened soul seeking self-realization and personal empowerment.</p>
+                    <p>OMO propone tecnología que respeta la consciencia humana. Interfaces limpias, funciones esenciales, cero ruido. Autonomía sin fricción.</p>
                 </div>
                 <div class="omo-description">
-                    <p>OMO is a spiritual journey of self-discovery and personal transformation throw the power of technology.</p>
+                    <p>Cada Pocket Tool aborda un aspecto fundamental de la vida — dinero, calma, presencia, hábitos — desde una misma filosofía: minimalismo, privacidad, presencia.</p>
                 </div>
             </div>
-
             <div class="omo-donation-section">
-                <p class="omo-donation-text">Does OMO resonate with you?</p>
+                <p class="omo-donation-text">¿Resuena contigo?</p>
                 <a href="https://coff.ee/omopockettool" target="_blank" rel="noopener" class="omo-donation-button">
-                    Support the Project
+                    Apoya el proyecto
                 </a>
             </div>
         </section>
 
-        <!-- Money Chakra Section -->
-                <section id="money" class="chakra-card">
-                    <div class="card-header">
-                        <img src="assets/OMO_NI.jpg" alt="OMO-NI" class="card-icon">
-                        <div class="card-header-main">
-                            <div class="card-title-row">
-                                <h2>OMO-NI</h2>
-                                <span class="status-badge in-progress">
-                                    In Progress
-                                    <span class="led-indicator"></span>
-                                </span>
-                            </div>
-                        </div>
-                        <div style="flex:1"></div>
-                        <div class="apple-store-icon-link disabled" style="margin-left:auto;">
-                            <img src="assets/apple-store-icon.svg" alt="App Store - Coming Soon" class="apple-store-icon">
-                        </div>
+        <!-- OMONI — Pocket Tool Nº 1 -->
+        <section id="omoni" class="chakra-card">
+            <div class="card-header">
+                <img src="assets/OMO_NI.jpg" alt="OMONI" class="card-icon">
+                <div class="card-header-main">
+                    <div class="card-title-row">
+                        <h2>OMONI</h2>
+                        <span class="status-badge in-progress">
+                            In Progress
+                            <span class="led-indicator"></span>
+                        </span>
                     </div>
-                    <div class="card-description-row">
-                        <div class="desc-subcard-row">
-                            <div class="desc-subcard">OMO-NI is designed to raise awareness about your expenses and resources.</div>
-                            <div class="desc-subcard">The first pocket tool in the OMO catalog brings you closer to minimalism as a lifestyle.</div>
-                        </div>
-                    </div>
-                    <div class="card-bottom-row">
-                        <div class="card-features-row">
-                            <span class="feature-chip">Resource inventory</span>
-                            <span class="feature-chip">Expense tracking</span>
-                            <span class="feature-chip">Healthy financial habits</span>
-                        </div>
-                        <div class="card-action-column">
-                            <a href="pages/omoni_detailed.html" class="learn-more-button">
-                                Learn More
-                                <span class="arrow-icon">→</span>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-
-        <!-- Crea Chakra Section -->
-        <section id="crea" class="chakra-section crea-chakra">
-            <div class="section-content">
-                <div class="chakra-header">
-                    <img src="assets/OMO_Crea.png" alt="OMO Crea" class="chakra-icon">
-                    <div class="chakra-title-container">
-                        <h2>OMO Crea - Chakra Sacro</h2>
-                        <a href="#" class="status-chip available" onclick="goToAppStore('crea')">Available</a>
-                    </div>
+                    <span class="pocket-tool-label">Pocket Tool Nº 1</span>
                 </div>
-                <p>El chakra sacro, asociado con las gónadas (ovarios/testículos), está relacionado con la sexualidad y la creatividad. OMO Crea es tu espacio para explorar y desarrollar tu potencial creativo. Desde la escritura hasta el diseño, pasando por la música y las artes visuales, encuentra tu voz única y expresa tu creatividad innata.</p>
+                <div class="apple-store-icon-link disabled" style="margin-left:auto;">
+                    <img src="assets/apple-store-icon.svg" alt="App Store - Coming Soon" class="apple-store-icon">
+                </div>
+            </div>
+            <div class="card-description-row">
+                <div class="desc-subcard-row">
+                    <div class="desc-subcard">¿Cuánto te cuesta vivir hoy?</div>
+                    <div class="desc-subcard">Consciencia financiera en tu bolsillo. Sin fricción.</div>
+                </div>
+            </div>
+            <div class="card-bottom-row">
+                <div class="card-features-row">
+                    <span class="feature-chip">Inventario de recursos</span>
+                    <span class="feature-chip">Seguimiento de gastos</span>
+                    <span class="feature-chip">Hábitos financieros</span>
+                </div>
+                <div class="card-action-column">
+                    <a href="pages/omoni_detailed.html" class="learn-more-button">
+                        Learn More
+                        <span class="arrow-icon">→</span>
+                    </a>
+                </div>
             </div>
         </section>
 
-        <!-- Control Chakra Section -->
-        <section id="control" class="chakra-section control-chakra">
-            <div class="section-content">
-                <div class="chakra-header">
-                    <img src="assets/OMO_Control.png" alt="OMO Control" class="chakra-icon">
-                    <div class="chakra-title-container">
-                        <h2>OMO Control - Chakra del Plexo Solar</h2>
-                        <a href="#" class="status-chip available" onclick="goToAppStore('control')">Available</a>
-                    </div>
-                </div>
-                <p>El chakra del plexo solar, asociado con el páncreas, gobierna el poder personal, la voluntad y la disciplina. OMO Control te ayuda a desarrollar autocontrol, establecer metas claras y mantener la disciplina necesaria para alcanzarlas. Aprende a manejar tus impulsos y consumo descontrolado.</p>
+        <!-- Historia Teaser -->
+        <section class="historia-teaser">
+            <div class="historia-teaser-content">
+                <p class="historia-eyebrow">Quién está detrás</p>
+                <h3 class="historia-heading">El origen de OMO</h3>
+                <p class="historia-excerpt">De un cuarto con una computadora vieja a un Mac comprado con dinero de jardín. La historia de por qué OMO existe.</p>
+                <a href="pages/historia.html" class="learn-more-button" style="margin-top: 0.5rem;">
+                    Leer mi historia
+                    <span class="arrow-icon">→</span>
+                </a>
             </div>
         </section>
 
-        <!-- Genius Chakra Section -->
-        <section id="genius" class="chakra-section genius-chakra">
-            <div class="section-content">
-                <div class="chakra-header">
-                    <img src="assets/OMO_Genius.png" alt="OMO Genius" class="chakra-icon">
-                    <div class="chakra-title-container">
-                        <h2>OMO Genius - Chakra del Corazón</h2>
-                        <a href="#" class="status-chip available" onclick="goToAppStore('genius')">Available</a>
-                    </div>
-                </div>
-                <p>El chakra del corazón, asociado con el timo, es el centro del amor, la compasión y la conexión emocional. OMO Genius Bridge es el puente entre tu corazón y tu cerebro, donde podrás buscar comunidad, encontrar pareja y desarrollar vínculos más profundos.</p>
-            </div>
-        </section>
-
-        <!-- Express Chakra Section -->
-        <section id="express" class="chakra-section express-chakra disabled">
-            <div class="section-content">
-                <div class="chakra-header">
-                    <img src="assets/OMO_Express.png" alt="OMO Express" class="chakra-icon">
-                    <div class="chakra-title-container">
-                        <h2>OMO Express - Chakra de la Garganta</h2>
-                        <span class="status-chip disabled">Próximamente</span>
-                    </div>
-                </div>
-                <p>El chakra de la garganta, asociado con la tiroides, está relacionado con la comunicación, la expresión y la verdad. OMO Express te ayuda a encontrar tu voz auténtica, mejorar tus habilidades de comunicación y expresar tus ideas con claridad y confianza. Aprende a comunicarte de manera efectiva y honesta.</p>
-            </div>
-        </section>
-
-        <!-- Totem Chakra Section -->
-        <section id="totem" class="chakra-section totem-chakra">
-            <div class="section-content">
-                <div class="chakra-header">
-                    <img src="assets/OMO_Totem.png" alt="OMO Totem" class="chakra-icon">
-                    <div class="chakra-title-container">
-                        <h2>OMO Totem - Chakra del Tercer Ojo</h2>
-                        <a href="#" class="status-chip available" onclick="goToAppStore('totem')">Available</a>
-                    </div>
-                </div>
-                <p>El chakra del tercer ojo, asociado con la glándula pineal, representa la intuición, la sabiduría y la percepción extrasensorial. OMO Totem es tu guía para descubrir tu arquetipo, tu tótem personal, ayudándote a recordar quién eres realmente. Conecta con tu esencia más profunda y encuentra tu identidad espiritual única.</p>
-            </div>
-        </section>
-
-        <!-- Dreams Chakra Section -->
-        <section id="dreams" class="chakra-section dreams-chakra">
-            <div class="section-content">
-                <div class="chakra-header">
-                    <img src="assets/OMO_Dreams.png" alt="OMO Dreams" class="chakra-icon">
-                    <div class="chakra-title-container">
-                        <h2>OMO Dreams - Chakra Corona</h2>
-                        <a href="#" class="status-chip available" onclick="goToAppStore('dreams')">Available</a>
-                    </div>
-                </div>
-                <p>El chakra de la corona, asociado con la glándula pituitaria, conecta con la conciencia universal, la espiritualidad y la trascendencia. OMO Dreams es una herramienta que te permite encontrar patrones en tus sueños, ayudándote a mejorar en tus sueños lúcidos y explorar tu subconsciente. Descubre los mensajes ocultos de tu mente y desarrolla una conexión más profunda con tu mundo onírico.</p>
-            </div>
-        </section>
     </main>
 
     <!-- Footer -->
     <div id="footer-container"></div>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <script src="common/footer.js"></script>
 </body>
-</html> 
+</html>
