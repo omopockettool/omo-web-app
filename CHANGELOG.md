@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0] - 2026-05-17
+
+### Added
+- **New landing page** — complete overhaul of `index.html` layout and content:
+  - Philosophy section with three pillars (Minimalismo, Privacidad, Presencia) with inline SVG icons
+  - Pocket Tools catalog grid — OMONI (active) + OMOBREATH, OMOHABITS, OMODIARY, OMOSILENCE, OMOSOCIAL (coming soon) with monogram placeholders
+  - Historia strip section linking to Mi Historia page
+  - Support button linking to Buy Me a Coffee
+- **Glosario page** (`pages/glosario.html` + `pages/glosario_styles.css`) — dictionary-style reference for OMO ecosystem terminology:
+  - Classic dictionary header (large light-weight title, edition label, full-width rule)
+  - Two-column layout: term + grammatical category on the left, numbered definitions + usage quote on the right
+  - Initial entries: OMO, Pocket Tool, uxOS
+  - Linked from footer on all pages
+
+### Changed
+- **Footer navigation** — replaced `footer.js` dynamic path detection with inlined `<footer>` HTML per page using correct relative paths. Cleaner, no JS required, React-migration-ready
+- **Removed "sin cuentas" messaging** from hero subtitle and OMONI card description to align with future account-based ecosystem model
+- **Navbar logo** updated from `omo-letters.png` to `omo-logo.png`
+- **Hero layout** updated to two-column: text left, `omo-logo.png` right; logo hidden on mobile
+
+### Fixed
+- Navigation `ERR_FILE_NOT_FOUND` error caused by absolute paths (`/pages/...`) in `footer.js` when opening files locally without a server
+
 ## [1.2.0] - 2026-04-28
 
 ### Added
