@@ -14,9 +14,9 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--color-navbar-bg);
     backdrop-filter: blur(30px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid var(--color-navbar-border);
     z-index: 1000;
     padding: 16px 24px;
 }
@@ -25,8 +25,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    gap: 16px;
 }
 
 .back-button {
@@ -183,6 +184,10 @@ body {
 
 /* ---- Responsive ---- */
 @media (max-width: 640px) {
+    .detail-navbar .navbar-content {
+        gap: 10px;
+    }
+
     .glosario-container {
         padding: 90px 1rem 4rem;
     }

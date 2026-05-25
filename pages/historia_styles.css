@@ -2,6 +2,48 @@
    HISTORIA PAGE — TIMELINE STYLES
    =================================== */
 
+/* ---- Opening Quote ---- */
+.historia-quote {
+    font-size: 1.15rem;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 1.8;
+    color: var(--color-text-tertiary);
+    border-left: 3px solid var(--color-accent);
+    margin: 0 0 4rem 0;
+    padding: 0.5rem 0 0.5rem 1.75rem;
+}
+
+/* ---- Year label inside card ---- */
+.timeline-year-label {
+    font-size: var(--font-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--color-text-muted);
+    margin: 0;
+}
+
+/* ---- Image Placeholder ---- */
+.timeline-image-placeholder {
+    width: 100%;
+    min-height: 180px;
+    background: #e8e9ea;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px dashed #c8cacc;
+    margin-top: 0.25rem;
+}
+
+.timeline-image-placeholder span {
+    font-size: var(--font-sm);
+    color: #a0a4a8;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -14,9 +56,9 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--color-navbar-bg);
     backdrop-filter: blur(30px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid var(--color-navbar-border);
     z-index: 1000;
     padding: 16px 24px;
 }
@@ -25,8 +67,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
+    gap: 16px;
 }
 
 .back-button {
@@ -129,8 +172,8 @@ body {
     width: var(--timeline-marker-size);
     height: var(--timeline-marker-size);
     border-radius: 50%;
-    background: var(--color-accent);
-    color: #ffffff;
+    background: var(--color-text-primary);
+    color: var(--color-bg-white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -146,6 +189,12 @@ body {
     font-size: 1.2rem;
     font-weight: 400;
     letter-spacing: 0.1em;
+}
+
+.timeline-marker--year {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
 }
 
 /* ---- Timeline Content Card ---- */
@@ -201,6 +250,10 @@ body {
 
 /* ---- Responsive ---- */
 @media (max-width: 600px) {
+    .detail-navbar .navbar-content {
+        gap: 10px;
+    }
+
     .historia-container {
         padding: 90px 1rem 3rem;
     }
@@ -237,5 +290,14 @@ body {
 
     .timeline-body {
         font-size: var(--font-base);
+    }
+
+    .timeline-image-placeholder {
+        min-height: 140px;
+    }
+
+    .historia-quote {
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
     }
 }

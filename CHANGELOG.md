@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.0] - 2026-05-25
+
+### Added
+- **Dedicated legal pages for Terms and Privacy** (`pages/terms.html`, `pages/privacy.html`, `pages/legal_styles.css`) — OMO now has standalone legal pages with the same editorial visual language as the rest of the website, plus footer links across the public site.
+- **Dark mode and ES/EN controls on the core website experience** (`index.html`, `script.js`, `styles.css`) — the landing page and legal pages now include persistent theme and language controls in the navbar, stored locally in the browser.
+
+### Changed
+- **Privacy messaging on the landing page now matches the real onboarding flow** — the philosophy pillar no longer promises “sin cuentas” and now emphasizes no tracking plus clearer ownership of user data.
+- **Terms content now scales to the future OMO catalog** — the legal copy was generalized so it applies to present and future Pocket Tools, not only OMONI.
+- **Terms copy now sets clearer expectations around product errors and backup responsibility** — availability language now explicitly says the apps are made by humans for humans, and the liability section points users to backup/export/import functions in Settings.
+
+### Fixed
+- **Dark mode now also reaches `historia`, `glosario`, and `omoni_detailed`** — those pages now load the shared website script, expose navbar controls, and use theme-aware navbar styling instead of staying stuck in light mode.
+- **Timeline year markers in `historia` now keep contrast in dark mode** — the `'13` / `'15` style circular markers now invert correctly against the active theme instead of blending into the page background.
+
 ## [1.3.0] - 2026-05-17
 
 ### Added
